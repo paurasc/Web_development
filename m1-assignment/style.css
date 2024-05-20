@@ -1,0 +1,129 @@
+
+/* style header area */
+header {
+    background: url("images/title.jpg") 0px -100px;/* shortcut */
+    /* background-image: url("images/central_park.jpg"); */
+    background-size: 1800px; /* cannot shortcut */
+    /* background-position: 0px -200px; */
+    /* background-repeat: no-repeat; */
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-bottom: 120px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 50px;
+}
+/*Navigation*/
+nav {
+    background-color: #f3f3f3;
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 15px;
+}
+nav li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 20px;
+}
+nav li a{
+    text-decoration:none;
+}
+nav li a:link {
+    color: #000;
+}
+nav li a:visited {
+    color: #818db3;
+}
+nav li a:hover {
+    text-decoration:underline;
+    color: #333;
+}
+nav li a:active {
+    color: #753a30;
+}
+
+/*Table*/
+table {
+    margin-top: 35px;
+}
+table, caption, th, td {
+    border: 1px solid #313131;
+}
+th, td {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+}
+caption {
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color: #6a6875;
+}
+/* Main */
+main {
+    margin:75px;
+}
+/*for submit form*/
+label {
+    display: block;
+    margin: 2px 0 0 0
+}
+input, textarea{
+    width: 300px;
+}
+input[type="radio"] { /* attribute selector */
+    width: 25px;
+}
+input[type="submit"] { /* attribute selector */
+    display: block;
+    margin:20px 0 10px 0;
+    width: 100px;
+    background-color: #ea4022;
+    border: 0px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size:20px;
+}
+/* style footer area */
+footer {
+    height: 100px;
+    background-color:  rgb(129,141,179);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 35px;
+}
+footer span:nth-child(4) {
+    font-style: italic;
+} 
+
+/*Image*/
+main{
+    position: relative;
+}
+img[src="images/home_dog.webp"]{
+    z-index: 1;
+    position: relative;
+    left: 150px; 
+    transform: rotate(-10deg);
+}
+img[src="images/What to Look For When Adopting a Rescue Dog.png"]{
+    z-index: 2;
+    position: relative;
+}
+img[src="images/puppers-scaled-300x225.jpeg"]{
+    z-index: 3;
+    position: relative;
+    left: -50px; 
+    transform: rotate(20deg);
+}
+/*Paragraph*/
+p {
+    text-indent: 2em;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Third Web Page</title>
+    <link rel="stylesheet" href="style.css"> <!--empty tag-->
+</head>
+<body>
+    <!-- Container -->
+    <div id="container">
+        <!-- Header -->
+        <header>My Website Brand</header>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="page3.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content -->
+        <main>
+            <h1>My Third Heading</h1>
+            <p>My Third Paragraph</p>
+            
+            <!-- Form -->
+            <form action="/signup" method="post">
+                <fieldset>
+                    <legend>User Personal Information</legend>
+                    <label>Enter your full name:</label>
+                    <input type="text" name="name">
+                    <label>Enter your email:</label>
+                    <input type="email" name="email">
+                    <label>Enter your phone:</label>
+                    <input type="tel" name="phone">
+
+                    <label>Select your gender:</label>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+
+                    
+                    <label>How should we contact you?</label>
+                    <select>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                    
+                    
+                    <label>Tell us of the reason for your visit today?</label>
+                    <textarea rows="5" cols="30"></textarea>
+
+                    
+                    <input type="submit" value="Sign Up">
+                </fieldset>
+            </form>
+        </main>
+        <!-- Footer -->
+        <footer>
+            &copy; Copyright 2024
+        </footer>
+    </div>
+</body>
+</html>

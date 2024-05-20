@@ -1,0 +1,106 @@
+
+/* style header area */
+header {
+    background: url("images/central_park.jpg") 0px -200px no-repeat;/* shortcut */
+    /* background-image: url("images/central_park.jpg"); */
+    background-size: 1500px; /* cannot shortcut */
+    /* background-position: 0px -200px; */
+    /* background-repeat: no-repeat; */
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+/* style navigation */
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 20px;
+    /* padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom:5px;*/
+}
+li a{
+    text-decoration:none;
+}
+li a:link {
+    color: #000;
+}
+li a:visited {
+    color: #818db3;
+}
+li a:hover {
+    text-decoration:underline;
+    color: #333;
+}
+li a:active {
+    color: #753a30;
+}
+nav {
+    background-color: rgb(214, 206, 200);
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
+}
+/* style the main content area */
+main {
+    margin:50px;
+}
+main h1 {
+    color: rgb(129,141,179);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home main {
+    margin:25px;
+}
+table {
+    margin-top: 35px;
+}
+table, caption, th, td {
+    border: 1px solid #000;
+}
+th, td {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+}
+caption {
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color: hwb(9 19% 54%);
+}
+label {
+    display: block;
+    margin: 15px 0 0 0
+}
+input, textarea{
+    width: 300px;
+}
+input[type="radio"] { /* attribute selector */
+    width: 25px;
+}
+input[type="submit"] { /* attribute selector */
+    display: block;
+    margin:20px 0 10px 0;
+    width: 100px;
+    background-color: #ea4022;
+    border: 0px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+/* style footer area */
+footer {
+    height: 40px;
+    background-color:  rgb(129,141,179);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(211,218,240);
+}
+input:focus {
+    background-color: #c8ebf7;
+}
