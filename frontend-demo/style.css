@@ -110,3 +110,25 @@ input:focus {
 #album #photo img{
     width: 800px;
 }
+.hidden {
+    display: none;
+}
+#info-box {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #000;
+    padding: 10px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#info-box h2, #info-box p {
+    margin: 0 0 10px 0;
+}
+
+#info-close {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    cursor: pointer;
+}

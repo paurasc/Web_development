@@ -35,26 +35,35 @@
                     <input type="email" name="email">
                     <label>Enter your phone:</label>
                     <input type="tel" name="phone">
-
+            
                     <label>Select your gender:</label>
                     <input type="radio" name="gender" value="male">Male
                     <input type="radio" name="gender" value="female">Female
-
-                    
+            
                     <label>How should we contact you?</label>
-                    <select>
+                    <select id="contactMethod">
+                        <option value="none">Select an option</option>
                         <option value="email">Email</option>
                         <option value="phone">Phone</option>
                     </select>
-                    
-                    
-                    <label>Tell us of the reason for your visit today?</label>
+            
+                    <div id="emailContact" class="hidden">
+                        <label>Enter your email:</label>
+                        <input type="email" name="contact_email">
+                    </div>
+            
+                    <div id="phoneContact" class="hidden">
+                        <label>Enter your phone number:</label>
+                        <input type="tel" name="contact_phone">
+                    </div>
+            
+                    <label>Tell us the reason for your visit today?</label>
                     <textarea rows="5" cols="30"></textarea>
-
-                    
+            
                     <input type="submit" value="Sign Up">
                 </fieldset>
             </form>
+            <script src="script.js"></script>
         </main>
         <!-- Footer -->
         <footer>
