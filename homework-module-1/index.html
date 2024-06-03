@@ -26,6 +26,10 @@
                 </nav>
             </div>
         </header>
+        <section id="timeofday">
+            <span>Your Current Local Time:</span>
+            <span id="clock"></span>
+    </section>
         <main>
             <h2>California's Greatest Cliffs</h2>
             <h3>What is so unique about California cliffs?</h3>
@@ -33,7 +37,7 @@
             <h3>Where are these cliffs?</h3>
             <p>Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. The closest cliff to Irvine is West Cliff, which is the most popular and most visited.</p>
         </main>
-                    
+         <!--           
         <section>
             <ul id="partners">
                 <li class="partner">
@@ -56,6 +60,7 @@
                 </li>
             </ul>
         </section>
+        -->
         <footer>
             <div id="nondisclaimer">
                 <div class="copy"><p>&copy Copyright 2024 :: GreatCliff.com</p></div>
@@ -71,6 +76,27 @@
                 </p>
             </div>
         </footer>
+        <script src="./js/digclock.js"></script>
+        <script>
+            
+                //Day2-Add Partners' six images//
+                var photos =[]; //declare an empty array to store iamge 
+                var fileNames=[];//declare an empty element to store image file names
+                var imageList =[];//declare an empty array to store html list that contain an image
+               var image;//declare an empty variable to store the assembled image list codes
+               var openList="<li class='partner'>";//declare a var to contain open list tag
+               var closeList="</li>"//declare a var to contain close list tag
+    
+                //create a loop to create 6 images strating with index of 0
+               for (var i=0;i<6;i++){
+               fileNames.push("partner"+(i+1));
+               photos.push('<img src="images/'+fileNames[i]+'.png">'); //assemble file name into image element and store in an array
+               image = openList+photos[i]+closeList;
+               imageList.push(image);
+                }
+                //display all six image codes stored in the array
+                document.getElementById("partners").innerHTML=imageList.join(" ");
+        </script>
     </div>
     
 </body>
