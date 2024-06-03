@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="info-box" style="visibility:hidden;">
-        <h2 id="info-heading"></h2>
-        <p id="info-text"></p>
-        <a href="#" id="info-close">Close</a>
-    </div>
     <div id="container">
         <header>My Website Brand</header>
         <nav>
@@ -26,70 +21,42 @@
             <h1>My fourth Heading</h1>
             <p>My fourth Paragraph</p>
             <ul id="album">
-                <li id="photo"><img src="images/winterland1.jpg"></li>
-                <li id="photo"><img src="images/winterland2.jpg"></li>
-                <li id="photo"><img src="images/winterland3.jpg"></li>
-                <li id="photo"><img src="images/winterland4.jpg"></li>
-                <li id="photo"><img src="images/winterland5.jpg"></li>
-                <li id="photo"><img src="images/winterland6.jpg"></li>
+                <li class="photo">
+                    <img src="images/winterland1.jpg" alt="winterland1">
+                    <p class="photo-title">Snow Land</p>
+                    <div class="photo-description">Most of plants and animals are having their hibernation period, so winter is not full of bright colors, but who says that white, snowy and a bit magical winter is not cool?</div>
+                </li>
+                <li class="photo">
+                    <img src="images/winterland2.jpg" alt="winterland2">
+                    <p class="photo-title">Wintery Road</p>
+                    <div class="photo-description">The most beautiful phenomenon of the winter is snow! You know that the snowflakes are never repeat themselves, they have amazing shapes, that different with each new snowflake.</div>
+                </li>
+                <li class="photo">
+                    <img src="images/winterland3.jpg" alt="winterland3">
+                    <p class="photo-title">Snowy Drive</p>
+                    <div class="photo-description">Snowy drive on the road.</div>
+                </li>
+                <li class="photo">
+                    <img src="images/winterland4.jpg" alt="winterland4">
+                    <p class="photo-title">Frosty Path</p>
+                    <div class="photo-description">After an overnight snowstorm.</div>
+                </li>
+                <li class="photo">
+                    <img src="images/winterland5.jpg" alt="winterland5">
+                    <p class="photo-title">Icy Lane</p>
+                    <div class="photo-description">Beautiful white icy lane.</div>
+                </li>
+                <li class="photo">
+                    <img src="images/winterland6.jpg" alt="winterland6">
+                    <p class="photo-title">Chilly Street</p>
+                    <div class="photo-description">Winter in the country.</div>
+                </li>
             </ul>
         </main>
         <footer>
             &copy; Copyright 2024
         </footer>
     </div>
-    <script src=".script.js"></script>
-    <script>
-        var photos = []; 
-        var fileNames = []; 
-        var imageList = []; 
-        var image; 
-        var openList = "<li id='photo'>"; 
-        var closeList = "</li>"; 
-
-        for (var i = 0; i < 6; i++) {
-            fileNames.push('winterland'+(i+1));
-            photos.push("<img src='images/" + fileNames[i] + ".jpg'>");
-            image = openList + photos[i] + closeList;
-            imageList.push(image);
-        }
-        document.getElementById("album").innerHTML = imageList.join(" ");
-
-        var infoBox = document.getElementById('info-box');
-        var infoHeading = document.getElementById('info-heading');
-        var infoText = document.getElementById('info-text');
-        var infoClose = document.getElementById('info-close');
-
-        var descriptions = [
-            "Description for winterland1",
-            "Description for winterland2",
-            "Description for winterland3",
-            "Description for winterland4",
-            "Description for winterland5",
-            "Description for winterland6"
-        ];
-
-        function showInfoBox(index) {
-            infoHeading.innerHTML = fileNames[index];
-            infoText.innerHTML = descriptions[index];
-            infoBox.style.visibility = 'visible';
-        }
-
-        function hideInfoBox() {
-            infoBox.style.visibility = 'hidden';
-        }
-
-        var photoElements = document.querySelectorAll('#album li');
-        photoElements.forEach((photo, index) => {
-            photo.addEventListener('click', function() {
-                showInfoBox(index);
-            });
-        });
-
-        infoClose.addEventListener('click', function(e) {
-            e.preventDefault();
-            hideInfoBox();
-        });
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
